@@ -27,11 +27,11 @@ code {
 body {
   font-family: $font-hei;
   font-size: 16px;
+  background: #00020b;
 }
 
 #root {
   margin: 0 auto;
-  background: lightgreen;
   display: flex;
   flex-direction: column;
 }
@@ -40,4 +40,13 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
 }
