@@ -5,6 +5,7 @@ import * as echarts from "echarts";
 import { init } from "echarts";
 import { Chart1 } from "../components/chart-1";
 import { Chart2 } from "../components/chart-2";
+import { Chart3 } from "../components/chart-3";
 
 const px = (n) => (n / 2420) * (window as any).pageWidth;
 
@@ -17,7 +18,9 @@ export const Home = () => {
           <Chart1 />
           <Chart2 />
         </section>
-        <section className="bordered section2"></section>
+        <section className="section2">
+          <Chart3 />
+        </section>
         <section className="bordered section3"></section>
         <section className="bordered section4"></section>
         <section className="bordered section5"></section>
