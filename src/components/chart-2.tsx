@@ -4,7 +4,7 @@ import { init } from "echarts";
 import { baseEchartOptions } from "../shared/base-echart-options";
 import { createEchartsOptions } from "../shared/create-echart-options";
 
-const px = (n) => (n / 2420) * (window as any).pageWidth;
+import { px } from "../shared/px";
 
 export const Chart2 = () => {
   const divRef = useRef(null);
