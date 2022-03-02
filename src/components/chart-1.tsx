@@ -9,48 +9,50 @@ export const Chart1 = () => {
   useEffect(() => {
     var myChart = echarts.init(divRef.current);
 
-    myChart.setOption(createEchartsOptions({
-      xAxis: {
-        data: ['兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区'],
-        axisTick: { show: false },
-        axisLine: {
-          lineStyle: { color: "#083B70" },
-        },
-        axisLabel: {
-          fontSize: px(12),
-          formatter(val) {
-            if (val.length > 2) {
-              const array = val.split("");
-              array.splice(2, 0, "\n");
-              return array.join("");
-            } else {
-              return val;
-            }
+    myChart.setOption(
+      createEchartsOptions({
+        xAxis: {
+          data: ["勒索病毒", "木马", "蠕虫", "后门病毒", "挖矿病毒"],
+          axisTick: { show: false },
+          axisLine: {
+            lineStyle: { color: "#083B70" },
+          },
+          axisLabel: {
+            fontSize: px(12),
+            formatter(val) {
+              if (val.length > 2) {
+                const array = val.split("");
+                array.splice(2, 0, "\n");
+                return array.join("");
+              } else {
+                return val;
+              }
+            },
           },
         },
-      },
-      yAxis: {
-        splitLine: { show: false },
-        axisLine: {
-          show: true,
-          lineStyle: { color: "#083B70" },
+        yAxis: {
+          splitLine: { show: false },
+          axisLine: {
+            show: true,
+            lineStyle: { color: "#083B70" },
+          },
+          axisLabel: {
+            fontSize: px(12),
+          },
         },
-        axisLabel: {
-          fontSize: px(12),
-        },
-      },
-      series: [
-        {
-          name: "销量",
-          type: "bar",
-          data: [10, 20, 36, 41, 15, 26, 37, 18, 29],
-        },
-      ],
-    }));
+        series: [
+          {
+            name: "销量",
+            type: "bar",
+            data: [10, 20, 36, 41, 15, 26, 37, 18, 29],
+          },
+        ],
+      })
+    );
   }, []);
   return (
-    <div className="bordered 管辖统计">
-      <h2>案发派出所管辖统计</h2>
+    <div className="bordered 传染">
+      <h2>计算机病毒传染性排行</h2>
       <div ref={divRef} className="chart"></div>
     </div>
   );

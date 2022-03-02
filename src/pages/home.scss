@@ -92,16 +92,16 @@
       }
     }
 
-    .管辖统计,
-    .破获排名,
-    .发案趋势,
-    .案发时段,
-    .战果,
-    .籍贯,
-    .年龄段,
-    .案发类型,
-    .案发街道,
-    .作案手段 {
+    .传染,
+    .损失,
+    .攻击趋势,
+    .攻击时段,
+    .年度病毒,
+    .分布,
+    .杀毒软件,
+    .病毒特性,
+    .类型分布,
+    .种类分析 {
       height: px(315);
       display: flex;
       flex-direction: column;
@@ -126,8 +126,8 @@
         width: 100%;
       }
     }
-    .发案趋势,
-    .案发时段 {
+    .攻击趋势,
+    .攻击时段 {
       height: px(363);
     }
     .chart12 {
@@ -135,7 +135,7 @@
       display: flex;
       flex-direction: column;
     }
-    .年龄段 {
+    .杀毒软件 {
       display: flex;
       flex-direction: column;
       height: px(363);
@@ -149,7 +149,7 @@
       &-图2,
       &-图3 {
         flex: 1;
-        border: 1px solid black;
+        border: 0px solid black;
         display: flex;
         flex-direction: column;
       }
@@ -175,6 +175,9 @@
           }
           .female {
             background: #8d70f8;
+          }
+          .thrid {
+            background: #f38e1c;
           }
         }
         .chart {
@@ -211,7 +214,7 @@
         }
       }
     }
-    .籍贯 {
+    .分布 {
       height: px(753);
       background: transparent;
       > .wrapper {
@@ -248,8 +251,8 @@
         }
       }
     }
-    .战果,
-    .作案手段 {
+    .年度病毒,
+    .种类分析 {
       padding: 0 px(24);
       > table {
         width: 100%;
@@ -275,7 +278,7 @@
         }
       }
     }
-    .作案手段 {
+    .种类分析 {
       > table {
         tbody {
           td {
@@ -284,7 +287,7 @@
         }
       }
     }
-    .破获排名 {
+    .损失 {
       height: px(423);
       .legend {
         display: flex;

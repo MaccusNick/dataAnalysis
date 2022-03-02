@@ -21,48 +21,48 @@ import { Chart14 } from "../components/chart-14";
 export const Home = () => {
   return (
     <div className="home">
-      <header style={{ backgroundImage: `url(${headerBg})` }}></header>
+      <header></header>
       <main>
         <section className="section1">
-          <Chart1 />
           <Chart2 />
+          <Chart1 />
         </section>
         <section className="section2">
-          <Chart3 />
           <Chart4 />
+          <Chart3 />
         </section>
         <section className="bordered section3">
           <Chart5 />
         </section>
         <section className="section4">
           <Chart6 />
-          <div className="bordered 年龄段">
-            <h2>犯罪人员年龄段分布</h2>
+          <div className="bordered 杀毒软件">
+            <h2>杀毒软件性能排行</h2>
             <div className="charts">
-              <Chart7 />
               <Chart8 />
               <Chart9 />
+              <Chart7 />
             </div>
           </div>
         </section>
         <section className="bordered section5"></section>
         <section className="section5">
-          <div className="bordered row1 案发类型">
-            <h2>案发类型统计</h2>
-            <div className="charts">
-              <Chart10 />
-              <Chart11 />
-            </div>
-          </div>
-          <div className="bordered row2 案发街道">
-            <h2>案发街道统计</h2>
+          <div className="bordered row2 类型分布">
+            <h2>病毒类型分布</h2>
             <div className="charts">
               <Chart12 />
               <Chart13 />
             </div>
           </div>
-          <div className="bordered row3 作案手段">
-            <h2>作案手段分析</h2>
+          <div className="bordered row1 病毒特性">
+            <h2>木马病毒特性</h2>
+            <div className="charts">
+              <Chart10 />
+              <Chart11 />
+            </div>
+          </div>
+          <div className="bordered row3 种类分析">
+            <h2>病毒种类分析</h2>
             <Chart14 />
           </div>
         </section>

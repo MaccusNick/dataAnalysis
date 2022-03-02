@@ -1,27 +1,53 @@
-import React from 'react';
+import React from "react";
 
 export const Chart5 = () => {
   return (
-    <div className="战果">
-      <h2>往年战果数对比</h2>
+    <div className="年度病毒">
+      <h2>年度病毒攻击统计</h2>
       <table>
         <thead>
-        <tr>
-          <th>年份</th><th>破案数</th><th>抓获嫌疑人</th><th>并串案件</th><th>现勘录入</th>
-          <th>视侦录入</th><th>合成案件数</th><th>合计</th>
-        </tr>
-        
+          <tr>
+            <th>年份</th>
+            <th>木马</th>
+            <th>蠕虫病毒</th>
+            <th>勒索病毒</th>
+            <th>宏病毒</th>
+            <th>挖矿病毒</th>
+            <th>后门病毒</th>
+            <th>合计</th>
+          </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>2015</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-        </tr>
-        <tr>
-          <td>2016</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-        </tr>
-        <tr>
-          <td>2017</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-        </tr>
+          <tr>
+            <td>2019</td>
+            <td>24</td>
+            <td>33</td>
+            <td>43</td>
+            <td>21</td>
+            <td>23</td>
+            <td>31</td>
+            <td>175</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>24</td>
+            <td>12</td>
+            <td>34</td>
+            <td>31</td>
+            <td>63</td>
+            <td>31</td>
+            <td>164</td>
+          </tr>
+          <tr>
+            <td>2021</td>
+            <td>23</td>
+            <td>12</td>
+            <td>43</td>
+            <td>21</td>
+            <td>23</td>
+            <td>12</td>
+            <td>134</td>
+          </tr>
         </tbody>
       </table>
     </div>

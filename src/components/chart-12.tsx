@@ -7,15 +7,12 @@ export const Chart12 = () => {
   const divRef = useRef(null);
 
   const data = [
-    { value: 0.08, name: "东岗路" },
-    { value: 0.06, name: "段家滩" },
-    { value: 0.11, name: "雁北" },
-    { value: 0.09, name: "五泉山" },
-    { value: 0.12, name: "中山路" },
-    { value: 0.06, name: "庆阳路" },
-    { value: 0.08, name: "武都路" },
-    { value: 0.08, name: "酒泉路" },
-    { value: 0.08, name: "天水路" },
+    { value: 0.08, name: "木马" },
+    { value: 0.06, name: "蠕虫" },
+    { value: 0.11, name: "感染形病毒" },
+    { value: 0.09, name: "灰色软件" },
+    { value: 0.12, name: "后门" },
+    { value: 0.06, name: "漏洞攻击" },
   ];
   useEffect(() => {
     var myChart = echarts.init(divRef.current);
@@ -58,7 +55,7 @@ export const Chart12 = () => {
   }, []);
 
   return (
-    <div className="年龄段-图1">
+    <div className="杀毒软件-图1">
       <div className="chart">
         <div className="main" ref={divRef} />
       </div>
